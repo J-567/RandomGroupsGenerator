@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/nova-light/theme.css';
+@import '~primeng/resources/primeng.min.css';
+
+
+
+
+body{
+    background-color: rgb(226, 220, 213);
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+}
+
+.tablelista{
+    text-align: center;
+}

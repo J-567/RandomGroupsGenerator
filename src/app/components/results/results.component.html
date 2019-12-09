@@ -1,0 +1,42 @@
+<h2>Grupos generados:</h2>
+<!--<p-table class="tablelista" [value]="groups">
+        <ng-template pTemplate="header">
+        <tr>
+            <th> Grupo </th>
+            <th> Miembros </th>
+        </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-group>
+        <tr > 
+            <td> {{group.name}} </td>
+            <td> {{group.members}}</td>
+        </tr>
+        </ng-template>
+</p-table> <br> -->
+<ul>
+    <li *ngFor="let group of groups">
+        {{group.name}}
+        <ul>
+            <li *ngFor="let miembro of group.members" >
+            {{miembro}}
+            </li>
+        </ul>
+    </li>
+</ul>
+<div class='ui-g-12 ui-md-12 ui-lg-12'>
+    <button pButton 
+        type="button" 
+        label="Recalcular" 
+        class="ui-button-rounded ui-button-warning"
+        (click)="generate()">
+    </button>
+</div>
+
+<div class='ui-g-12 ui-md-12 ui-lg-12'>
+    <button pButton 
+        type="button" 
+        label="Generar nuevos grupos" 
+        class="ui-button-rounded ui-button-danger"
+        (click)="newGroups()">
+    </button>  
+</div> 
